@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "dice-notes",
+    "slug": "dice-notes",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
