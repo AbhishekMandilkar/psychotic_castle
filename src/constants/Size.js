@@ -1,0 +1,3 @@
+const BOTTOM_TAB_ICON_SIZE = 32;
+
+export { BOTTOM_TAB_ICON_SIZE };
