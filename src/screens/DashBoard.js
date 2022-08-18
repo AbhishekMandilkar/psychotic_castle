@@ -2,15 +2,17 @@ import { View, Text, Button } from "react-native";
 import React from "react";
 import Container from "../common/Container";
 import { useNavigation } from "@react-navigation/native";
+import Typography from "../common/Typography";
+import getGreetingsBasedOnTime from "../helpers/getGreeting";
 
 const DashBoard = () => {
   const navigation = useNavigation();
   return (
     <Container>
-      <Text style={{ fontFamily: "light", fontSize: 24 }}>DashBoard</Text>
-      <Text style={{ fontFamily: "regular", fontSize: 24 }}>DashBoard</Text>
-      <Text style={{ fontFamily: "medium", fontSize: 24 }}>DashBoard</Text>
-      <Text style={{ fontFamily: "bold", fontSize: 24 }}>DashBoard</Text>
+      <Typography h3 bold>
+        {getGreetingsBasedOnTime("Abhishek")}
+      </Typography>
+
       <Button
         title="Go to login"
         onPress={() => navigation.navigate("login")}
